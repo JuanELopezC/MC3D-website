@@ -1,0 +1,49 @@
+.page-content {
+    text-align: center;
+}
+
+
+.grid-courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;  /* space between images */
+    text-align: center;
+}
+
+
+.prints-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;  /* space between images */
+}
+
+/* Bottom prints section text */
+.grid-prints {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+/* Links around images*/
+.print-link {
+    display: block;
+    flex-shrink: 0;
+    width: 220px;    /*  width for consistent image size */
+    color: #000080;  /* preferred link color */
+    text-decoration: none; /* remove underline  */
+}
+
+/* Remove purple color on visited links */
+.print-link:visited {
+    color: #000080; /* same as unvisited to avoid purple */
+    text-decoration: none;
+}
+
+/* Images: fill link width, maintain aspect ratio */
+.image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; 
+}
